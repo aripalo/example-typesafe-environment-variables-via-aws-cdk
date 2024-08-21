@@ -9,7 +9,9 @@ type ZodInputFor<T> = z.ZodType<unknown, z.ZodTypeDef, T>;
 export const EnvironmentSchema = z
   .object({
     /**
-     * Magic variable. Must be in `kebab-case`.
+     * Magic variable.
+     * - Must be in `kebab-case`.
+     * - Must be prefixed with `my-`.
      *
      * It's used to do stuff.
      * Some additional guidelines and documentation for the variable.
