@@ -23,8 +23,8 @@ export const EnvironmentSchema = z
   })
   .readonly() satisfies ZodInputFor<Record<string, string>>;
 
-/** Type representing the valid values of the schema */
+/** Type representing the valid values of the schema: Used in Lambda. */
 export type Environment = z.infer<typeof EnvironmentSchema>;
 
-/** Type representing the input values of the schema */
+/** Type representing the input values of the schema: Used in CDK. */
 export type EnvironmentInput = z.input<typeof EnvironmentSchema>;
