@@ -8,8 +8,6 @@ export class FullyTypesafeStack extends cdk.Stack {
     super(scope, id, props);
 
     const environment: EnvironmentInput = {
-      // This could be also a reference to another CDK resource
-      // like bucket.bucketName etc, but let's keep it simple for now:
       MY_ENV_VAR: "my-value",
     };
 
