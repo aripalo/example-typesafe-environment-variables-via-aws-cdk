@@ -4,6 +4,6 @@ This repo is an accompanying resource to blog post: https://aripalo.technology/b
 
 ## Examples
 
-1. [No schema](/1-no-schema/)
-2. [Runtime schema](/2-runtime-schema/)
-3. [Fully type safe](/3-fully-typesafe/)
+1. [No schema](/1-no-schema/) – Manual environment variable validation required
+2. [Runtime schema](/2-runtime-schema/) – Zod schema to validate environment variables in runtime code
+3. [Fully type safe](/3-fully-typesafe/) – Zod schema to validate environment variables in runtime code AND input contract for CDK
