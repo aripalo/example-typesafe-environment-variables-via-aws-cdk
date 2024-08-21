@@ -6,7 +6,7 @@ export class NoSchemaStack extends cdk.Stack {
   constructor(scope: Construct, id: string, props?: cdk.StackProps) {
     super(scope, id, props);
 
-    new NodejsFunction(this, "MyFunction", {
+    new NodejsFunction(this, "handler", {
       environment: {
         // This could be also a reference to another CDK resource
         // like bucket.bucketName etc, but let's keep it simple for now:
